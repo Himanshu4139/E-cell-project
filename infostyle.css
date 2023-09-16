@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    font-family: 'Maiden Orange', cursive;
+    font-family: 'Modern Antiqua', cursive;
+    font-family: 'Reggae One', cursive;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    background-color: blanchedalmond;
+}
+.nav{
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 0.3rem solid rgba(128, 128, 128, 0.412);
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul li{
+    display: block;
+    font-size: 1.8rem;
+    margin-right: 3rem;
+}
+.nav i{
+    font-size: 1.8rem;
+    margin-right: 2%;
+    display: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+.img{
+    height: 30rem;
+    width: 40rem;
+    background-position: center;
+    background-image: url('main.png');
+    background-size: cover;
+    
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msg h1{
+    font-size: 4.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+span{
+    color: rgb(255, 201, 14);
+}
+.msg p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+@media (width<=480px) {
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        background-color: white;
+        display: none;
+        width: 100%;
+        border-bottom: 0.3rem solid rgba(128, 128, 128, 0.412);
+    }
+    .nav ul li{
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+    .nav i{
+        display: block;
+        margin-right: 5%;
+    }
+    .img{
+        height: 100%;
+        width: 80%;
+        background-position: center;
+    }
+}
